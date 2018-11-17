@@ -445,6 +445,17 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .carousel-txt {
+    max-width: 250px;
+  }
+  .carousel-txt h5 {
+    font-size: 2rem;
+  }
+  .admissions-btn,
+  .our-programs-btn {
+    margin: 8px;
+  }
+
   .second-section-part-one {
     padding: 1.5rem;
   }
@@ -457,6 +468,10 @@
   .get-in-touch-first-section,
   .get-in-touch-second-section {
     padding: 1.5rem 1.75rem 1.5rem 1.5rem;
+  }
+  .get-in-touch-second-section iframe {
+    min-height: 400px;
+    max-height: 425px;
   }
   .footer-section-one {
     text-align: center;
