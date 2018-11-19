@@ -10,12 +10,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="manifest" href="images/favicon/manifest.json">
     <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#93805f">
     <meta name="msapplication-TileColor" content="#93805f">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#93805f">
+
+
+    <meta name="Description" content="BODHI VRUKSHA SCHOOL OF ART &amp;DESIGN PROVIDES STUDENTS WITH CHALLENGING AND EFFECTIVE HANDS-ON TRAINING IN FASHION AND DESIGN. LAUNCH A NEW CAREER OR FURTHER YOUR CURRENT ONE WITH OUR FLEXIBLE FASHION DESIGN PROGRAMS IN VIJAYAWADA CITY.">
+    <meta name="Description" content="Author: prabhuteja Katakam, 
+    Illustrator: 9849736478">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
@@ -425,6 +431,24 @@
     <!-- Section Footer Ends -->
 
     <!-- Optional JavaScript -->
+<script>
+    //This is the "Offline copy of pages" service worker
+
+//Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+if (navigator.serviceWorker.controller) {
+  console.log('[PWA Builder] active service worker found, no need to register')
+} else {
+  //Register the ServiceWorker
+  navigator.serviceWorker.register('pwabuilder-sw.js', {
+    scope: './'
+  }).then(function(reg) {
+    console.log('Service worker has been registered for scope:'+ reg.scope);
+  });
+}
+
+
+</script>
+
     <script>
         wow = new WOW(
             {
