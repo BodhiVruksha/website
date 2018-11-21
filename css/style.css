@@ -604,6 +604,9 @@ html {
 /* about page ends */
 
 @media only screen and (max-width: 480px) {
+   .scroll-downs {
+    display: none;
+  }
   .menu-active {
     border-bottom: none;
     font-weight: 600;
