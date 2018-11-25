@@ -343,23 +343,23 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 get-in-touch-first-section">
 
-                   <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxDxJH721-yfWqkYdZzuMW-8ubP_ft0QPGlnEnJ/exec">
+                    <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzCdp89lVkVU-FztPCs6fBpikWWT9hzYxoS3t-e/exec">
 
                         <div class="form-group">
                             <label class="get-in-touch-form-label" for="full_name">Full Name</label>
-                            <input type="text" class="form-control custom-form-control" id="full_name" placeholder="Enter Your Name">
+                            <input type="text" class="form-control custom-form-control" id="fullname" placeholder="Enter Your Name">
                         </div>
                         <div class="form-group">
                             <label class="get-in-touch-form-label" for="exampleInputEmail1">Email Address</label>
-                            <input type="email" class="form-control custom-form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email Address">
+                            <input type="email" class="form-control custom-form-control" id="eMail" aria-describedby="emailHelp" placeholder="Enter Your Email Address">
                         </div>
                         <div class="form-group">
                             <label class="get-in-touch-form-label" for="mobile_number">Mobile</label>
-                            <input type="number" class="form-control custom-form-control" id="mobile_number" placeholder="Enter Your Mobile Number">
+                            <input type="number" class="form-control custom-form-control" id="mobile" placeholder="Enter Your Mobile Number">
                         </div>
                         <div class="form-group">
                             <label class="get-in-touch-form-label" for="FormControlTextarea1">Message</label>
-                            <textarea class="form-control custom-form-control" id="FormControlTextarea1" rows="3" placeholder="Write Message.."></textarea>
+                            <textarea class="form-control custom-form-control" id="message" rows="3" placeholder="Write Message.."></textarea>
                         </div>
 
                         <button type="submit" class="btn msg-send-btn float-right">Send
@@ -503,6 +503,8 @@ if (navigator.serviceWorker.controller) {
         $('html, body').animate({scrollTop:0});
             }     
 </script>
+ <script data-cfasync="false" type="text/javascript"
+ src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
 
 </body>
 </html>
