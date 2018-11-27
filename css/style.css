@@ -16,12 +16,15 @@
 html {
   scroll-behavior: smooth;
 }
+
 .no-padding {
   padding: 0px;
 }
+
 .no-margin {
   margin: 0px;
 }
+
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
@@ -64,6 +67,7 @@ html {
   font-size: 3.25rem;
   letter-spacing: 2px;
 }
+
 .custom-carousel-prev,
 .custom-carousel-next {
   width: 8%;
@@ -76,6 +80,7 @@ html {
   transform: translateX(-50%);
   z-index: 15;
 }
+
 .mousey {
   width: 34px;
   height: 55px;
@@ -87,6 +92,7 @@ html {
   opacity: 0.75;
   box-sizing: content-box;
 }
+
 .scroller {
   width: 3px;
   height: 10px;
@@ -97,14 +103,17 @@ html {
   animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
 }
+
 @keyframes scroll {
   0% {
     opacity: 0;
   }
+
   10% {
     transform: translateY(0);
     opacity: 1;
   }
+
   100% {
     transform: translateY(15px);
     opacity: 0;
@@ -115,16 +124,19 @@ html {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
 .great-quote-row {
   background-color: var(--primarydark);
   color: var(--light);
   padding: 2px 1rem;
   font-size: 0.85rem;
 }
+
 .great-quote {
   font-weight: 500;
   text-decoration: underline;
 }
+
 .custom-header-navbar {
   background: url(../images/header-nav-background.png);
   background-size: contain;
@@ -135,6 +147,7 @@ html {
 .custom-header-navbar .navbar-brand {
   z-index: 1;
 }
+
 .header-navbar-div {
   position: fixed;
   z-index: 16;
@@ -146,18 +159,22 @@ html {
 .ml-md-auto {
   z-index: 1;
 }
+
 .navbar-toggler {
   z-index: 1;
 }
+
 .navbar-collapse,
 .collapse,
 .show {
   z-index: 1;
 }
+
 .custom-nav-header-link {
   text-align: center;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
 }
+
 .overlay {
   position: relative;
 }
@@ -186,15 +203,19 @@ html {
   height: 60px;
   cursor: pointer;
 }
+
 .header-social-icons {
   text-align: right;
 }
+
 .header-social-icons a {
   color: var(--light);
 }
+
 .header-social-icons .fab {
   padding: 0px 0.75rem;
 }
+
 .menu-active {
   color: var(--secondary) !important;
   border-bottom: 3px solid var(--secondary);
@@ -207,6 +228,7 @@ html {
   margin: 0.6rem;
   padding-bottom: 3px;
 }
+
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
   color: var(--secondary);
@@ -219,11 +241,13 @@ html {
   /* border-top: 1px solid var(--primary); */
   border-bottom: 1px solid var(--primary);
 }
+
 .second-section-part-one {
   background-image: url(../images/second-section-part-one.png);
   padding: 5rem 5rem 3.5rem 5rem;
   background-size: cover;
 }
+
 .second-section-part-one-header {
   font-size: 2rem;
   font-weight: 400;
@@ -231,37 +255,45 @@ html {
   text-align: center;
   letter-spacing: 6px;
 }
+
 .second-section-part-one-header span {
   font-weight: 700;
   color: var(--primarydark);
 }
+
 .second-section-part-one-body {
   line-height: 1.85rem;
   font-weight: 500;
   text-align: justify;
   margin: 3rem 0px;
 }
+
 .second-section-part-two {
   background-image: url(../images/second-section-part-two.png);
   background-size: cover;
   padding: 5rem 10rem 4rem 2.5rem;
 }
+
 .second-section-part-two-txt {
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 2.25rem;
 }
+
 .second-section-part-two-txt .span1 {
   color: var(--secondary);
   font-weight: 700;
 }
+
 .second-section-part-two-txt .span2 {
   color: var(--light);
 }
+
 .second-section-part-two-txt .span3 {
   color: var(--light);
   font-weight: 300;
 }
+
 .second-section-part-two-txt .span4 {
   color: var(--secondary);
   font-weight: 700;
@@ -270,6 +302,7 @@ html {
 .section-two-part-one-btns-col {
   text-align: center;
 }
+
 .admissions-btn,
 .our-programs-btn {
   background-color: var(--primary);
@@ -277,10 +310,12 @@ html {
   margin: 1rem;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
 }
+
 .admissions-btn:hover,
 .our-programs-btn:hover {
   background-color: var(--primarydark);
 }
+
 .custom-card-body {
   text-align: center;
   background-color: var(--primaryopacity);
@@ -293,14 +328,17 @@ html {
   width: 100%;
   padding: 0.75rem;
 }
+
 .carousel-control-next,
 .carousel-control-prev {
   z-index: 1;
 }
+
 .courses-offer-txt {
   margin-bottom: 2rem;
   text-align: center;
 }
+
 .courses-offer-txt h2 {
   font-size: 2.5rem;
   color: var(--secondary);
@@ -308,10 +346,12 @@ html {
   letter-spacing: 2px;
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
 }
+
 .courses-section-home {
   background-image: url(../images/courses_bg.png);
   padding: 3rem 0rem;
 }
+
 .course-card-img::before {
   position: absolute;
   content: "";
@@ -321,23 +361,28 @@ html {
 
 .course-card-img {
   position: relative;
-  filter: gray; /* IE5+ */
+  filter: gray;
+  /* IE5+ */
   -webkit-filter: grayscale(1);
 }
+
 .course-custom-cards {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   border: 0.125px solid rgba(0, 0, 0, 0.125);
   height: 475px;
 }
+
 .course-custom-cards:hover {
   box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.5);
   border: 0.125px solid rgba(0, 0, 0, 0.125);
   transform: scale(1.05);
   transition: 0.3s;
 }
+
 .course-custom-cards .card-body {
   background-color: rgba(0, 0, 0, 0.03);
 }
+
 .course-custom-cards:hover .card-body {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -346,6 +391,7 @@ html {
   filter: none;
   -webkit-filter: grayscale(0);
 }
+
 .course-custom-cards:hover .card-title {
   color: var(--secondary);
 }
@@ -361,6 +407,7 @@ html {
 .finishing-school-course-card {
   padding: 10px !important;
 }
+
 .more-info-txt {
   font-size: 0.85rem;
   float: right;
@@ -370,12 +417,15 @@ html {
 .more-info-txt:hover {
   color: var(--secondary);
 }
+
 .course-custom-cards:hover .more-info-txt {
   color: var(--secondary);
 }
+
 .more-info-arrow {
   margin-left: 3px;
 }
+
 .custom-card {
   overflow: hidden;
   padding: 0;
@@ -403,24 +453,29 @@ html {
   display: block;
   border: none;
 }
+
 .custom-card-body h5 {
   margin: 0;
 }
+
 .get-in-touch-txt {
   text-align: center;
   margin: 2.25rem 0px;
 
   color: var(--light);
 }
+
 .get-in-touch-txt h2 {
   font-size: 2.5rem;
   letter-spacing: 2px;
 }
+
 .get-in-touch-first-section,
 .get-in-touch-second-section {
   padding: 3rem;
   padding-top: 0rem;
 }
+
 .get-in-touch-second-section iframe body {
   background-color: transparent !important;
 }
@@ -429,29 +484,35 @@ html {
   background-image: url(../images/getintouch.png);
   background-size: cover;
 }
+
 .custom-form-control {
   background-color: rgba(0, 0, 0, 0.7);
   border: none;
   color: var(--light);
 }
+
 .custom-form-control:focus {
   background-color: rgba(0, 0, 0, 0.9);
   border: none;
   color: var(--light);
   box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.5);
 }
+
 .msg-send-btn {
   background-color: var(--primary);
   color: var(--light);
 }
+
 .msg-send-btn:hover {
   background-color: var(--primarydark);
   box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.5);
 }
+
 .msg-send-btn:focus {
   background-color: var(--primarydark);
   box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.5);
 }
+
 .footer-section-one {
   background: url(../images/footer-pattern-bg.png);
   background-size: cover;
@@ -463,16 +524,19 @@ html {
 .footer-section-one:before {
   background-color: var(--primaryopacity);
 }
+
 .footer-copyright {
   background-color: var(--primarydark);
   text-align: center;
 }
+
 .footer-copyright p {
   margin: 0px;
   padding: 0.4rem 0px;
   color: var(--light);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
+
 .get-in-touch-form-label {
   color: var(--light);
 }
@@ -481,14 +545,17 @@ html {
   color: var(--light);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
+
 .footer-links {
   list-style: none;
 }
+
 .footer-links li a {
   color: var(--light);
   text-decoration: none;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
+
 .footer-links li a:hover,
 .footer-links li a:focus {
   color: var(--secondary);
@@ -507,6 +574,7 @@ html {
   font-size: 1.5rem;
   padding: 1rem 0rem;
 }
+
 .footer-social-links li {
   border-radius: 50%;
   color: var(--light);
@@ -532,12 +600,17 @@ html {
   border-radius: 50%;
   border: 0.5px solid rgba(255, 255, 255, 0.4);
 }
+
 #myBtn:hover {
   border: 0.5px solid rgba(255, 255, 255, 0.8);
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
 }
+
 /* about page starts */
-.about-jumbotron-bg {
+.about-jumbotron-bg,
+.faculty-jumbotron-bg,
+.academics-jumbotron-bg,
+.admissions-jumbotron-bg {
   background-image: url(../images/about_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -547,7 +620,11 @@ html {
   background-position: bottom;
   background-attachment: fixed;
 }
-.about-us-bg-head {
+
+.about-us-bg-head,
+.faculty-bg-head,
+.academics-bg-head,
+.admissions-bg-head {
   text-align: center;
   padding: 2rem;
   /* background-color: rgba(255, 255, 255, 0.2); */
@@ -556,21 +633,26 @@ html {
   font-weight: 400;
   letter-spacing: 4px;
 }
+
 .bg-lead {
   color: var(--white);
   text-align: center;
 }
+
 .about-page-txt-container {
   padding-left: 6rem;
   padding-right: 6rem;
 }
+
 .about-page-txt-one {
   padding-bottom: 2rem;
 }
+
 .abt-pg-txt-one-span {
   color: var(--secondary);
   font-weight: 550;
 }
+
 .about-page-txt-one,
 .about-page-txt-two,
 .about-page-txt-three,
@@ -580,6 +662,7 @@ html {
   line-height: 1.75;
   font-family: "Merriweather", serif;
 }
+
 .vision-txt,
 .mission-txt {
   font-size: 2.5rem;
@@ -591,6 +674,7 @@ html {
   padding-left: 0;
   width: 75px;
 }
+
 .about-page-txt-four {
   margin-bottom: 2rem;
 }
@@ -599,12 +683,66 @@ html {
   background-image: url(../images/about-bg.png);
   background-repeat: repeat;
 }
+
 /* about page ends */
 
+/* Faculty Page Starts */
+.faculty-row {
+  margin: 5.5rem 0.25rem;
+}
+
+.faculty-img {
+  filter: gray;
+  -webkit-filter: grayscale(1);
+}
+
+
+.faculty-text {
+  font-size: 1.5rem;
+  letter-spacing: 1.25px;
+  line-height: 1.75;
+  font-family: "Merriweather", serif;
+}
+
+.faculty-row-web {
+  display: flex;
+}
+
+.faculty-row-mobile {
+  display: none;
+}
+
+.faculty-social-icons i {
+  font-size: 1.5rem;
+  margin: 0rem 1rem;
+}
+
+.faculty-social-icons {
+  margin: 1.5rem 0rem;
+}
+
+.faculty-page-heading {
+  text-align: center;
+  margin-top: 5.5rem;
+}
+
+.faculty-row:hover .faculty-img {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  transition: 3s;
+}
+
+.faculty-social-icons i:hover {
+  color: var(--secondary);
+}
+
+/* Faculty Page Ends */
+
 @media only screen and (max-width: 480px) {
-   .scroll-downs {
+  .scroll-downs {
     display: none;
   }
+
   .menu-active {
     border-bottom: none;
     font-weight: 600;
@@ -613,12 +751,15 @@ html {
   .carousel-txt {
     max-width: 250px;
   }
+
   .carousel-txt h5 {
     font-size: 2rem;
   }
+
   .homepage-carousel-img {
     height: 50vh;
   }
+
   .admissions-btn,
   .our-programs-btn {
     margin: 8px;
@@ -627,20 +768,25 @@ html {
   .second-section-part-one {
     padding: 1.5rem;
   }
+
   .second-section-part-two {
     padding: 1.5rem;
   }
+
   .three-cards {
     padding: 2.5rem;
   }
+
   .get-in-touch-first-section,
   .get-in-touch-second-section {
     padding: 1.5rem 1.75rem 1.5rem 1.5rem;
   }
+
   .get-in-touch-second-section iframe {
     min-height: 400px;
     max-height: 425px;
   }
+
   .footer-section-one {
     text-align: center;
     background: url(../images/header-nav-background.png);
@@ -649,42 +795,55 @@ html {
     padding: 2.25rem 0;
     align-items: center;
   }
+
   .footer-address {
     padding: 1.5rem;
   }
+
   .footer-links {
     margin: 0rem auto;
     padding: 0;
   }
+
   .footer-links li {
     margin-bottom: 0.75rem;
     text-decoration: underline;
   }
+
   .footer-social-links {
     padding: 1rem 1rem 0 1rem;
   }
+
   .footer-copyright {
     font-size: 0.8rem;
   }
+
   .header-social-icons {
     display: none;
   }
+
   .custom-carousel-inner {
     height: auto;
   }
+
   .great-quote-row {
     display: none;
   }
 
   /* about-page mobile starts*/
-  .about-us-bg-head {
+  .about-us-bg-head,
+  .faculty-bg-head,
+  .academics-bg-head,
+  .admissions-bg-head {
     font-size: 2.5rem;
     padding: 0;
   }
+
   .about-page-txt-container {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
   }
+
   .about-page-txt-one,
   .about-page-txt-two,
   .about-page-txt-three,
@@ -694,5 +853,17 @@ html {
     letter-spacing: 0px;
     font-family: "Merriweather", serif;
   }
+
   /* about-page mobile ends */
+
+  /* faculty page mobile starts */
+  .faculty-row-web {
+    display: none;
+  }
+
+  .faculty-row-mobile {
+    display: flex;
+  }
+
+  /* faculty page mobile ends */
 }
