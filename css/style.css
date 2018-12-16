@@ -66,6 +66,7 @@ html {
 .carousel-txt h5 {
   font-size: 3.25rem;
   letter-spacing: 2px;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .custom-carousel-prev,
@@ -316,6 +317,8 @@ html {
 .admissions-btn:hover,
 .our-programs-btn:hover {
   background-color: var(--primarydark);
+  color: var(--light);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .custom-card-body {
@@ -638,7 +641,7 @@ html {
 .admissions-jumbotron-bg {
   border-width: 20px;
   position: absolute;
-  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+  border-color: rgba(0, 0, 0, 1) transparent transparent transparent;
   content: "";
   top: 100%;
   left: 50%;
@@ -707,7 +710,8 @@ html {
 }
 
 .about-page-body,
-.faculty-page-body {
+.faculty-page-body,
+.academics-page-body{
   background-image: url(../images/about-bg.png);
   background-repeat: repeat;
 }
@@ -794,6 +798,118 @@ html {
 }
 
 /* Faculty Page Ends */
+
+
+/* academics page web starts */
+.course-card .card-head {
+  height: 8rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.our-programs-heading {
+  color: var(--light);
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.course-card:hover .course-card-hover1{
+  background-color: #f44336;
+}
+
+
+.course-card:hover .course-card-hover2{
+  background-color: #ffb300;
+}
+
+.course-card:hover .course-card-hover3{
+  background-color: #00bcd4;
+}
+
+
+.course-card:hover .course-card-hover4{
+  background-color: rebeccapurple;
+}
+
+.course-card:hover .course-card-hover5{
+  background-color: #8bc34a;
+}
+.our-programs-sub-txt {
+  font-size: 1.25rem;
+  line-height: 2;
+}
+
+.offered-course-list {
+  line-height: 2rem;
+  list-style: circle;
+  padding-left: 25px;
+  font-weight: 450;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.card-deck .course-card {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.course-card:hover{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border:none;
+}
+
+.course-card .card-title{
+color:var(--secondary);
+}
+.text-muted a{
+  color:var(--textblack);
+}
+
+.academics-content-heading{
+  margin: 4rem 0rem 2rem 0rem;
+}
+
+.custom-deck{
+  margin: 3rem 0rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2;
+
+}
+.offered-course-txt, .academics-content-heading{
+  font-size: 2.25rem;
+}
+
+.offered-course-card{
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,.3);
+  padding: 15px;
+  margin: 2.25rem 0rem;
+}
+
+.course-heading{
+margin: 1.5rem 0rem;
+color:var(--secondary);
+font-weight: 700;
+}
+
+.course-info{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 2;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.course-details-ul{
+  line-height: 2;
+}
+/* academics page web ends */
+
 
 @media only screen and (max-width: 480px) {
   .scroll-downs {
