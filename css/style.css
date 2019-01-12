@@ -1,14 +1,14 @@
 :root {
   --primary: #93805f;
-  --secondary: #723300;
+  --secondary: #9a3b00;
   --light: #fdf4ed;
   --white: #fff;
   --dark: #000;
   --primarydark: #5d4e32;
-  --secondarylight: #652d00;
+  --secondarylight: rgba(154, 59, 0, .5);
   --textblack: #222;
   --primaryopacity: rgba(147, 128, 95, 0.9);
-  --secondaryopacity: rgba(114, 51, 0, 0.8);
+  --secondaryopacity: rgba(154, 59, 0, .8);
 }
 
 @import url("https://fonts.googleapis.com/css?family=Merriweather");
@@ -485,6 +485,31 @@ html {
   background-color: transparent !important;
 }
 
+.contact-head {
+  color: #fff;
+}
+
+.contact-head .fas {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.contact-background {
+  padding: 1.25rem 0.5rem;
+  background-color: rgba(0, 0, 0, .5);
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 80px 80px 0px 0px;
+}
+
+.contact-data {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
 .get-in-touch {
   background-image: url(../images/getintouch.png);
   background-size: cover;
@@ -522,7 +547,7 @@ html {
   background: url(../images/footer-pattern-bg.png);
   background-size: cover;
   background-color: var(--primary);
-  padding: 2.25rem 0;
+  padding: 1.5rem 0;
   align-items: center;
 }
 
@@ -580,14 +605,28 @@ html {
   padding: 1rem 0rem;
 }
 
-.footer-social-links li {
+.footer-social-links a {
   border-radius: 50%;
   color: var(--light);
   cursor: pointer;
 }
 
-.footer-social-links li:hover {
+.footer-social-links a:hover {
   color: var(--secondary);
+}
+
+.footer-copyright .one {
+  text-align: left;
+}
+
+.footer-copyright .two {
+  text-align: right;
+}
+
+.two a {
+  color: var(--light);
+  text-decoration: underline;
+  font-style: italic;
 }
 
 #myBtn {
@@ -711,7 +750,7 @@ html {
 
 .about-page-body,
 .faculty-page-body,
-.academics-page-body{
+.academics-page-body {
   background-image: url(../images/about-bg.png);
   background-repeat: repeat;
 }
@@ -810,32 +849,33 @@ html {
 
 .our-programs-heading {
   color: var(--light);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin-top: 1rem;
 }
 
-.course-card:hover .course-card-hover1{
+.course-card:hover .course-card-hover1 {
   background-color: #f44336;
 }
 
 
-.course-card:hover .course-card-hover2{
+.course-card:hover .course-card-hover2 {
   background-color: #ffb300;
 }
 
-.course-card:hover .course-card-hover3{
+.course-card:hover .course-card-hover3 {
   background-color: #00bcd4;
 }
 
 
-.course-card:hover .course-card-hover4{
+.course-card:hover .course-card-hover4 {
   background-color: rebeccapurple;
 }
 
-.course-card:hover .course-card-hover5{
+.course-card:hover .course-card-hover5 {
   background-color: #8bc34a;
 }
+
 .our-programs-sub-txt {
   font-size: 1.25rem;
   line-height: 2;
@@ -857,47 +897,50 @@ html {
   margin-right: 5px;
 }
 
-.course-card:hover{
+.course-card:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  border:none;
+  border: none;
 }
 
-.course-card .card-title{
-color:var(--secondary);
-}
-.text-muted a{
-  color:var(--textblack);
+.course-card .card-title {
+  color: var(--secondary);
 }
 
-.academics-content-heading{
+.text-muted a {
+  color: var(--textblack);
+}
+
+.academics-content-heading {
   margin: 4rem 0rem 2rem 0rem;
 }
 
-.custom-deck{
+.custom-deck {
   margin: 3rem 0rem;
   font-family: 'Roboto', sans-serif;
   line-height: 2;
 
 }
-.offered-course-txt, .academics-content-heading{
+
+.offered-course-txt,
+.academics-content-heading {
   font-size: 2.25rem;
 }
 
-.offered-course-card{
+.offered-course-card {
   background-color: #f1f1f1;
   border-radius: 15px;
-  box-shadow: 0px 5px 15px rgba(0,0,0,.3);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, .3);
   padding: 15px;
   margin: 2.25rem 0rem;
 }
 
-.course-heading{
-margin: 1.5rem 0rem;
-color:var(--secondary);
-font-weight: 700;
+.course-heading {
+  margin: 1.5rem 0rem;
+  color: var(--secondary);
+  font-weight: 700;
 }
 
-.course-info{
+.course-info {
   font-size: 1.2rem;
   letter-spacing: 1px;
   line-height: 2;
@@ -905,15 +948,28 @@ font-weight: 700;
   font-weight: 300;
 }
 
-.course-details-ul{
+.course-details-ul {
   line-height: 2;
 }
+
 /* academics page web ends */
 
 
 @media only screen and (max-width: 480px) {
+  .footer-copyright .one {
+    text-align: center;
+  }
+
+  .footer-copyright .two {
+    text-align: center;
+  }
+
   .scroll-downs {
     display: none;
+  }
+
+  .contact-background {
+    font-size: 1rem;
   }
 
   .menu-active {
@@ -959,6 +1015,8 @@ font-weight: 700;
     min-height: 400px;
     max-height: 425px;
   }
+
+
 
   .footer-section-one {
     text-align: center;
