@@ -302,6 +302,7 @@ var Grid = (function () {
 	}
 
 	function hidePreview() {
+		debugger;
 		current = -1;
 		var preview = $.data(this, 'preview');
 		preview.close();
@@ -424,7 +425,7 @@ var Grid = (function () {
 				// the current expanded item (might be different from this.$item)
 				var $expandedItem = $items.eq(this.expandedIdx);
 				$expandedItem.css('height', $expandedItem.data('height')).on(transEndEventName, onEndFn);
-
+				self.$item.css('height', $expandedItem.data('height')).on(transEndEventName, onEndFn);
 				if (!support) {
 					onEndFn.call();
 				}

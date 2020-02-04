@@ -804,6 +804,19 @@ footer a:hover {
 	text-decoration: underline;
 }
 
+#collectionsTab li a {
+	padding: 0px 50px; display: inline-block;line-height: 70px;
+	font-size: 16px; font-weight: bold; color: #777777; 
+	
+}
+#collectionsTab li:hover a, #collectionsTab li.active a{
+	background-color: #f6f6f6  ;
+	color: #777777;
+} 
+#collectionsTab li.active a{
+	background-color: #f6f6f6  ;
+	color: #777777;
+} 
 /* ================================
 more media queries
 ================================= */
