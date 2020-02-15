@@ -164,7 +164,7 @@ $.fn.imagesLoaded = function (callback) {
 var Grid = (function () {
 
 	// list of items
-	var $grid = $('#og-grid, #og-grid1'),
+	var $grid = $('#dvMen, #dvKids, #dvWomen'),
 		// the items
 		$items = $grid.children('li'),
 		// current expanded item's index
@@ -191,7 +191,7 @@ var Grid = (function () {
 		support = Modernizr.csstransitions,
 		// default settings
 		settings = {
-			minHeight: 500,
+			minHeight: 600,
 			speed: 350,
 			easing: 'ease'
 		};
@@ -227,7 +227,7 @@ var Grid = (function () {
 	}
 
 	function initEvents() {
-
+debugger;
 		// when clicking an item, show the preview with the item´s info and large image.
 		// close the item if already expanded.
 		// also close if clicking on the item´s cross
@@ -302,7 +302,6 @@ var Grid = (function () {
 	}
 
 	function hidePreview() {
-		debugger;
 		current = -1;
 		var preview = $.data(this, 'preview');
 		preview.close();
@@ -329,6 +328,7 @@ var Grid = (function () {
 			this.$closePreview = $('<span class="og-close"></span>');
 			this.$previewInner = $('<div class="og-expander-inner"></div>').append(this.$closePreview, this.$fullimage, this.$details);
 			this.$previewEl = $('<div class="og-expander"></div>').append(this.$previewInner);
+			this.$previewModal = $('<div class="modal fade"></div>').append(this.$previewEl);
 			// append preview element to the item
 			this.$item.append(this.getEl());
 			// set the transitions for the preview and the item
