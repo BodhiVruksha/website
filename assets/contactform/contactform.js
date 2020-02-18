@@ -92,7 +92,7 @@ jQuery(document).ready(function($) {
     else var str = $(this).serialize();
     var action = $(this).attr('action');
     if( ! action ) {
-      action = 'https://script.google.com/macros/s/AKfycbzDakHMgEONY2x9fURySk8uq_aBTO8encJQ3lZXEIxTdatd1I9e/exec';
+      action = 'https://script.google.com/macros/s/AKfycbwsQ7De8JMQYA6l_49OgJUcCrNircXJ6dSebLTLphYB/exec';
     }
     $.ajax({
       type: "POST",
