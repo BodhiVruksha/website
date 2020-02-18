@@ -47,8 +47,7 @@
                 <div class="col-md-offset-2 col-md-8">
                     <div class="section-heading">
                         <h2>Customer Details</h2>
-                        <div class="heading-line"></div>
-                        <p>Please enter the details of this call in the below sections
+                         <p>Please enter the details of this call in the below sections
                              and click on Submit. </p>
                     </div>
                 </div>
@@ -71,17 +70,33 @@
 
                         <div class="col-md-offset-2 col-md-8">
                             <div class="form-group">
-                                <input type="email" required class="form-control" name="email" id="email"
-                                    placeholder="Customer Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <input type="tel" required class="form-control" name="phone" id="phone"
+                                    placeholder="Customer phone" data-rule="phone" data-msg="Please enter a valid phone number" />
                                 <div class="validation"></div>
                             </div>
                         </div>
+
+
+  <div class="col-md-offset-2 col-md-8">
+  <div class="form-group">
+  <label for="cars">Status of the Customer:</label>
+  <select id="status" name="status">
+    <option value="Answered">ANS</option>
+    <option value="Not picking">NPC</option>
+    <option value="Not reachable">NRC</option>
+    <option value="Busy">BUSY</option>
+  </select>
+  <input type="submit">
+  </div>
+  </div>
+
+
 
                         <div class="col-md-offset-2 col-md-8">
                             <div class="form-group">
                                 <input type="text" required class="form-control" name="subject" id="subject"
                                     placeholder="Purpose" data-rule="minlen:4"
-                                    data-msg="Please enter at least 8 chars of subject" />
+                                    data-msg="Please enter at least 4 chars of subject" />
                                 <div class="validation"></div>
                             </div>
                         </div>
@@ -98,6 +113,13 @@
                                 <button type="submit" class="btn btn-theme btn-lg btn-block">SUBMIT</button>
                             </div>
                         </div>
+
+                                                <div class="form-group">
+						                            <div class="col-md-offset-2 col-md-8">
+						                                <button type="reset" class="btn btn-theme btn-lg btn-block">RESET</button>
+						                            </div>
+                        </div>
+
                     </form>
 
                 </div>
