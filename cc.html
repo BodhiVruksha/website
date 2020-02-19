@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Kiran Call Centre
+    <title>LORVEN Call Centre
     </title>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -32,7 +32,7 @@
                 </button>
 
                 <!-- Logo text or image -->
-                <a class="navbar-brand" href="#">KIRAN CALL CENTRE
+                <a class="navbar-brand" href="#">LORVEN CALL CENTRE
                 </a>
 
             </div>
@@ -71,7 +71,7 @@
                         <div class="col-md-offset-2 col-md-8">
                             <div class="form-group">
                                 <input type="tel" required class="form-control" name="phone" id="phone"
-                                    placeholder="Customer phone" data-rule="phone" data-msg="Please enter a valid phone number" />
+                                    placeholder="Customer phone" pattern="[0-9]{10-20}" required data-msg="Please enter a valid phone number" />
                                 <div class="validation"></div>
                             </div>
                         </div>
@@ -130,32 +130,7 @@
         </div>
     </section>
 
-    <script>
-	    function save2File() {
-	    	var t1 = document.getElementById('tbName');
-	        var t2 = document.getElementById('tbPhn');
-	                var t3 = document.getElementById('tbMail');
-	                        var t4 = document.getElementById('tbText');
-	        var data = t1.value + ';' + t2.value + ';' + t3.value + ';' + t4.value;
 
-	        var textToBLOB = new Blob([data], { type: 'text/plain' });
-	        var sFileName = 'formData.txt';   // The file name.
-
-	        var newLink = document.createElement("a");
-	        newLink.download = sFileName;
-
-	        if (window.webkitURL != null) {
-	            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
-	        }
-	        else {
-	            newLink.href = window.URL.createObjectURL(textToBLOB);
-	            newLink.style.display = "none";
-	            document.body.appendChild(newLink);
-	        }
-
-	        newLink.click();
-	    }
-</script>
 
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
